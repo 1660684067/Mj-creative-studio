@@ -14,331 +14,380 @@
 
 <style>
 
-*{box-sizing:border-box;margin:0;padding:0}
+* {
 
-html{scroll-behavior:smooth}
-</style>
-</head>
-<body>
-<section id="ad-maker" style="background:#111;padding:30px 15px;text-align:center;color:white;">
+  box-sizing: border-box;
 
-<h2 style="color:#d4af37;">Advertisement Maker</h2>
+  margin: 0;
 
-<p>Tengeneza tangazo la biashara ya mteja wako.</p>
-
-<input id="business" placeholder="Jina la biashara" style="padding:12px;width:90%;margin:10px;">
-
-<input id="product" placeholder="Bidhaa au huduma" style="padding:12px;width:90%;margin:10px;">
-
-<input id="price" placeholder="Bei ya bidhaa" style="padding:12px;width:90%;margin:10px;">
-<label style="display:block; color:black; margin:15px;">Chagua picha ya bidhaa: <input type="file" id="productImage" accept="image/*" style="display:block !important;"></label>
-
-<input id="phone" placeholder="Namba ya WhatsApp" style="padding:12px;width:90%;margin:10px;">
-
-<button onclick="makeAd()" style="padding:13px 25px;background:#d4af37;border:0;font-weight:bold;">
-
-TENGENEZA TANGAZO
-
-</button>
-
-<div id="preview" style="margin-top:25px;"></div>
-
-</section>
-
-<script>
-
-function makeAd(){
-
-let name=document.getElementById("business").value;
-
-let product=document.getElementById("product").value;
-
-let price=document.getElementById("price").value;
-
-let phone=document.getElementById("phone").value;
-
-document.getElementById("preview").innerHTML=
-
-"<h2>"+name+"</h2><h3>"+product+"</h3><h2>"+price+"</h2><p>Wasiliana nasi WhatsApp: "+phone+"</p>";
+  padding: 0;
 
 }
 
-</script>
-<section id="ad-maker" style="background:#111;padding:30px 15px;text-align:center;color:white;">
+html {
 
-<h2 style="color:#d4af37;">ADVERTISEMENT MAKER</h2>
-
-<p>Tengeneza tangazo la mteja wako hapa.</p>
-
-<input id="business" placeholder="Jina la biashara">
-
-<br><br>
-
-<input id="product" placeholder="Bidhaa anazouza">
-
-<br><br>
-
-<input id="price" placeholder="Bei ya bidhaa">
-
-<br><br>
-
-<input id="phone" placeholder="Namba ya WhatsApp">
-
-<br><br>
-
-<button onclick="makeAd()">TENGENEZA TANGAZO</button>
-
-<div id="preview" style="margin-top:25px;padding:20px;background:#222;"></div>
-
-</section>
-
-<script>
-
-function makeAd(){
-
-let name=document.getElementById("business").value;
-
-let product=document.getElementById("product").value;
-
-let price=document.getElementById("price").value;
-
-let phone=document.getElementById("phone").value;
-
-document.getElementById("preview").innerHTML=
-
-"<h2>"+name+"</h2><h3>"+product+"</h3><h2>"+price+"</h2><p>Wasiliana nasi: "+phone+"</p>";
+  scroll-behavior: smooth;
 
 }
 
-</script>
-body{font-family:Arial,sans-serif;background:#080808;color:white;line-height:1.7}
+body {
 
-header{padding:20px 5%;background:#111;border-bottom:1px solid #d4af37;text-align:center}
+  font-family: Arial, sans-serif;
 
-.logo{font-size:22px;font-weight:bold;color:#d4af37}
+  background: #080808;
 
-nav{margin-top:12px}
+  color: white;
 
-nav a{color:white;text-decoration:none;margin:0 7px;font-size:13px}
+  line-height: 1.7;
 
-.hero{text-align:center;padding:85px 20px;background:linear-gradient(135deg,#080808,#302716)}
+}
 
-h1{font-size:34px;margin-bottom:15px}
+header {
 
-h1 span{color:#d4af37}
+  padding: 20px 5%;
 
-.hero p{color:#ddd;margin-bottom:20px}
+  background: #111;
 
-.btn{display:inline-block;background:#d4af37;color:#080808;padding:12px 22px;margin:7px;text-decoration:none;border-radius:6px;font-weight:bold}
+  border-bottom: 1px solid #d4af37;
 
-section{text-align:center;padding:55px 7%}
+  text-align: center;
 
-h2{color:#d4af37;font-size:28px;margin-bottom:25px}
+}
 
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.logo {
 
-.service,.portfolio-item{background:#171717;border:1px solid #59491f;border-radius:10px;padding:22px}
+  font-size: 22px;
 
-.service h3{color:#d4af37;margin-bottom:10px}
+  font-weight: bold;
 
-.service p,.about p,.order p{color:#ccc}
+  color: #d4af37;
 
-.portfolio{background:#111}
+}
 
-.portfolio-grid{max-width:650px;margin:auto}
+nav {
 
-.portfolio-item{padding:0;overflow:hidden}
+  margin-top: 12px;
 
-.portfolio-item img{width:100%;height:auto;display:block}
+}
 
-.portfolio-item h3{color:#d4af37;padding:15px}
+nav a {
 
-.about{background:#080808}
+  color: white;
 
-.order{background:#111}
+  text-decoration: none;
 
-.order p{margin-bottom:20px}
+  margin: 0 7px;
 
-footer{text-align:center;background:#050505;padding:30px;color:#aaa;border-top:1px solid #59491f}
+  font-size: 13px;
 
-footer strong{color:#d4af37}
+}
 
-@media(max-width:600px){
+.hero {
 
-h1{font-size:29px}
+  text-align: center;
 
-nav a{margin:0 4px}
+  padding: 85px 20px;
+
+  background: linear-gradient(135deg,#080808,#302716);
+
+}
+
+h1 {
+
+  font-size: 34px;
+
+  margin-bottom: 15px;
+
+}
+
+h1 span {
+
+  color: #d4af37;
+
+}
+
+.hero p {
+
+  color: #ddd;
+
+  margin-bottom: 20px;
+
+}
+
+.btn {
+
+  display: inline-block;
+
+  background: #d4af37;
+
+  color: #080808;
+
+  padding: 12px 22px;
+
+  margin: 7px;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+}
+
+section {
+
+  text-align: center;
+
+  padding: 55px 7%;
+
+}
+
+h2 {
+
+  color: #d4af37;
+
+  font-size: 28px;
+
+  margin-bottom: 25px;
 
 }
 
 </style>
 
 </head>
-<script>
 
-document.getElementById("productImage").addEventListener("change", function() {
-
-  const file = this.files[0];
-
-  const preview = document.getElementById("imagePreview");
-
-  if (file) {
-
-    preview.src = URL.createObjectURL(file);
-
-    preview.style.display = "block";
-
-  }
-
-});
-
-</script>
 <body>
-
 <header>
 
-<div class="logo">MJ CREATIVE STUDIO</div>
+  <div class="logo">MJ CREATIVE STUDIO</div>
 
-<nav>
+  <nav>
 
-<a href="#home">Home</a>
+    <a href="#home">Home</a>
 
-<a href="#services">Services</a>
+    <a href="#services">Services</a>
 
-<a href="#portfolio">Portfolio</a>
+    <a href="#portfolio">Portfolio</a>
 
-<a href="#about">About</a>
+    <a href="#about">About</a>
 
-<a href="#order">Order</a>
+    <a href="#order">Order</a>
 
-</nav>
+    <a href="#ad-maker">Advertise</a>
+
+  </nav>
 
 </header>
 
 <div class="hero" id="home">
 
-<h1>We Create <span>Digital Experiences</span></h1>
+  <h1>We Create <span>Digital Experiences</span></h1>
 
-<p>Professional graphic design, website development, branding and digital marketing services. We turn your ideas into powerful brands.</p>
+  <p>Professional graphic design, website development, branding and digital marketing services. We turn your ideas into powerful brands.</p>
 
-<a class="btn" href="#order">ORDER NOW</a>
+  <a class="btn" href="#order">ORDER NOW</a>
 
-<a class="btn" href="https://wa.me/255673692935">WhatsApp Us</a>
+  <a class="btn" href="https://wa.me/255673692935">WhatsApp Us</a>
 
 </div>
-<img id="imagePreview" style="display:none; width:200px; margin-top:10px;">
+
 <section id="services">
 
-<h2>Our Services</h2>
+  <h2>Our Services</h2>
 
-<div class="services">
+  <div class="services">
 
-<div class="service">
+    <div class="service">
 
-<h3>🎨 Graphic Design</h3>
-
-<p>Professional posters, flyers, logos and business cards.</p>
-
-</div>
-
-<div class="service">
-
-<h3>💻 Website Design</h3>
-
-<p>Modern and responsive websites for your business.</p>
-
-</div>
-
-<div class="service">
-
-<h3>📱 Social Media</h3>
-
-<p>Creative content and social media branding.</p>
-
-</div>
-
-<div class="service">
-
-<h3>🏢 Business Branding</h3>
-
-<p>Build a strong and professional business identity.</p>
-
-</div>
-
-</div>
-
-</section>
+      <h3>🎨 Graphic Design</h3>
+      
 
 <section class="portfolio" id="portfolio">
 
-<h2>Our Portfolio</h2>
+  <h2>Our Portfolio</h2>
 
-<p style="color:#ccc;margin-bottom:25px">Explore our creative design projects.</p>
+  <p style="color:#ccc;margin-bottom:25px">
 
-<div class="portfolio-grid">
+    Explore our creative design projects.
 
-<div class="portfolio-item">
+  </p>
 
-<img src="3363ED60-EDC1-428E-A2C4-195DF666B525.png" alt="Fashion and Boutique Advertisement">
+  <div class="portfolio-grid">
 
-<h3>Fashion & Boutique Advertisement</h3>
+    <div class="portfolio-item">
 
-</div>
+      <img src="3363ED60-EDC1-428E-A2C4-195DF666B525.png"
 
-</div>
+      alt="Fashion and Boutique Advertisement">
+
+      <h3>Fashion & Boutique Advertisement</h3>
+
+    </div>
+
+  </div>
 
 </section>
 
 <section class="about" id="about">
 
-<h2>About MJ Creative Studio</h2>
+  <h2>About MJ Creative Studio</h2>
 
-<p>We help businesses grow through creativity, modern technology and professional digital solutions. Our goal is to make your brand stand out.</p>
+  <p>We help businesses grow through creativity, modern technology and professional digital solutions. Our goal is to make your brand stand out.</p>
 
 </section>
 
 <section class="order" id="order">
 
-<h2>Order Our Services</h2>
+  <h2>Order Our Services</h2>
 
-<p>Ready to grow your business? Contact us directly through WhatsApp.</p>
+  <p>Ready to grow your business? Contact us directly through WhatsApp.</p>
 
-<a class="btn" href="https://wa.me/255673692935?text=Hello%20MJ%20Creative%20Studio!%20I%20want%20to%20order%20your%20services.">PLACE YOUR ORDER</a>
+  <a class="btn"
+
+  href="https://wa.me/255673692935">
+
+  PLACE YOUR ORDER
+
+  </a>
+
+</section>
+
+
+<section id="ad-maker">
+
+  <h2>Tangaza Biashara Yako</h2>
+
+  <p>Weka taarifa za bidhaa yako na tengeneza tangazo.</p>
+
+  <input class="ad-input" id="business"
+
+  placeholder="Jina la biashara">
+
+  <input class="ad-input" id="product"
+
+  placeholder="Bidhaa au huduma">
+
+  <input class="ad-input" id="price"
+
+  placeholder="Bei ya bidhaa">
+
+  <label class="photo-label">
+
+    Chagua picha ya bidhaa:
+
+    <input type="file" id="productImage" accept="image/*">
+
+  </label>
+
+  <input class="ad-input" id="phone"
+
+  placeholder="Namba ya WhatsApp">
+
+  <button class="make-button" onclick="makeAd()">
+
+    TENGENEZA TANGAZO
+
+  </button>
+
+  <div id="preview"></div>
 
 </section>
 
 <footer>
 
-<p><strong>MJ CREATIVE STUDIO</strong></p>
+  <p><strong>MJ CREATIVE STUDIO</strong></p>
 
-<p>Professional Digital & Creative Solutions</p>
+  <p>Professional Digital & Creative Solutions</p>
 
-<p>WhatsApp: 0673692935</p>
+  <p>WhatsApp: 0673692935</p>
 
-<p>© 2026 MJ Creative Studio. All Rights Reserved.</p>
+  <p>© 2026 MJ Creative Studio. All Rights Reserved.</p>
 
 </footer>
-<section id="advertisement">
 
-  <h2>Tangaza Biashara Yako</h2>
 
-  <p>Weka bidhaa zako hapa ili wateja wazione.</p>
+<script>
 
-  <input type="text" id="sellerName" placeholder="Jina la biashara">
+let selectedImage = "";
 
-  <input type="text" id="productName" placeholder="Jina la bidhaa">
+document.getElementById("productImage").addEventListener("change", function() {
 
-  <input type="number" id="productPrice" placeholder="Bei ya bidhaa">
+  const file = this.files[0];
 
-  <input type="text" id="whatsapp" placeholder="Namba ya WhatsApp">
+  if (file) {
 
-  <button onclick="alert('Karibu MJ Creative Studio!')">
+    selectedImage = URL.createObjectURL(file);
 
-    Tuma Tangazo
+  }
 
-  </button>
+});
 
-</section>
+function makeAd() {
+
+  const name = document.getElementById("business").value;
+
+  const product = document.getElementById("product").value;
+
+  const price = document.getElementById("price").value;
+
+  const phone = document.getElementById("phone").value;
+
+  if (!name || !product || !price || !phone) {
+
+    alert("Tafadhali jaza taarifa zote za tangazo.");
+
+    return;
+
+  }
+
+  const preview = document.getElementById("preview");
+
+  preview.innerHTML = "";
+
+  const title = document.createElement("h2");
+
+  title.textContent = name;
+
+  const item = document.createElement("h3");
+
+  item.textContent = product;
+
+  const cost = document.createElement("h3");
+
+  cost.textContent = "Bei: " + price;
+
+  preview.appendChild(title);
+
+  preview.appendChild(item);
+
+  preview.appendChild(cost);
+
+  if (selectedImage) {
+
+    const photo = document.createElement("img");
+
+    photo.src = selectedImage;
+
+    preview.appendChild(photo);
+
+  }
+
+  const contact = document.createElement("a");
+
+  contact.className = "btn";
+
+  contact.textContent = "WASILIANA WHATSAPP";
+
+  contact.href = "https://wa.me/" + phone.replace(/\D/g, "");
+
+  contact.target = "_blank";
+
+  preview.appendChild(contact);
+
+}
+
+</script>
+
 </body>
 
 </html>
