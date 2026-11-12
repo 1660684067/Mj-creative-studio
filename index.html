@@ -60,6 +60,53 @@ document.getElementById("preview").innerHTML=
 }
 
 </script>
+<section id="ad-maker" style="background:#111;padding:30px 15px;text-align:center;color:white;">
+
+<h2 style="color:#d4af37;">ADVERTISEMENT MAKER</h2>
+
+<p>Tengeneza tangazo la mteja wako hapa.</p>
+
+<input id="business" placeholder="Jina la biashara">
+
+<br><br>
+
+<input id="product" placeholder="Bidhaa anazouza">
+
+<br><br>
+
+<input id="price" placeholder="Bei ya bidhaa">
+
+<br><br>
+
+<input id="phone" placeholder="Namba ya WhatsApp">
+
+<br><br>
+
+<button onclick="makeAd()">TENGENEZA TANGAZO</button>
+
+<div id="preview" style="margin-top:25px;padding:20px;background:#222;"></div>
+
+</section>
+
+<script>
+
+function makeAd(){
+
+let name=document.getElementById("business").value;
+
+let product=document.getElementById("product").value;
+
+let price=document.getElementById("price").value;
+
+let phone=document.getElementById("phone").value;
+
+document.getElementById("preview").innerHTML=
+
+"<h2>"+name+"</h2><h3>"+product+"</h3><h2>"+price+"</h2><p>Wasiliana nasi: "+phone+"</p>";
+
+}
+
+</script>
 body{font-family:Arial,sans-serif;background:#080808;color:white;line-height:1.7}
 
 header{padding:20px 5%;background:#111;border-bottom:1px solid #d4af37;text-align:center}
