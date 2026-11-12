@@ -171,7 +171,25 @@ nav a{margin:0 4px}
 </style>
 
 </head>
+<script>
 
+document.getElementById("productImage").addEventListener("change", function() {
+
+  const file = this.files[0];
+
+  const preview = document.getElementById("imagePreview");
+
+  if (file) {
+
+    preview.src = URL.createObjectURL(file);
+
+    preview.style.display = "block";
+
+  }
+
+});
+
+</script>
 <body>
 
 <header>
